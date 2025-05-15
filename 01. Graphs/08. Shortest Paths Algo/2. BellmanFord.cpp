@@ -1,11 +1,7 @@
-/*
-
-    TC O(E*V)
-    SC O(V)
-    
-    relax for n-1 times 
-    relax one more time to detect -ve cycle
-    
+/* Bellman-Ford Algorithm
+   For directed graphs with positive or negative weights
+   Handles Single-Source Shortest Path (SSSP) and detects negative cycles
+   Time: O(V * E), Space: O(V)
 */
 
 class Solution {
