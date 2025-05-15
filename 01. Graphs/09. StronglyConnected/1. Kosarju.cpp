@@ -16,8 +16,8 @@ class Solution
 	void dfs(int node,vector<int> adj[],vector<int>&visited,vector<int>&topo) {
 	    visited[node]=1;
 	    for(auto a:adj[node]) {
-	        if(visited[a]==0)
-	        dfs(a,adj,visited,topo);
+		if(visited[a]==0)
+		dfs(a,adj,visited,topo);
 	    }
 	    topo.push_back(node);
 	}
