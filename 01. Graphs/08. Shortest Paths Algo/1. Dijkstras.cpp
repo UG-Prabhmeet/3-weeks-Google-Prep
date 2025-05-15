@@ -1,15 +1,7 @@
-/*
-	TC O(V+E)*logV
-	PC O(V)
-
-	Implementations wise its like BFS ( instead of queue we use priority queue)
-
-	0-Is there are negetive edges but not in a cycle then we an use this algo
-	1-If there are negetive edges in a cycle we cant use this also 
-	2-for this we use bellman ford
-	3-It there are negetive weight cycles then we cant use bellman ford too, we 
-	can just detect negetive weight cycles using bellman ford
-
+/* Dijkstra’s Algorithm
+   For directed/undirected graphs with only positive weights
+   Solves Single-Source Shortest Path (SSSP) using a min-heap
+   Time: O((V + E) * log V), Space: O(V + E)
 */
 
 // https://leetcode.com/problems/minimum-weighted-subgraph-with-the-required-paths/
