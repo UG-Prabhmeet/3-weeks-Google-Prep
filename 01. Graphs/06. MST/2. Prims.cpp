@@ -14,48 +14,65 @@
 
 */
 
-#include<bits/stdc++.h>
+#include <bits/stdc++.h>
 using namespace std;
 
-int minCostConnectPoints(vector<vector<int>>& points) {
-        int V = points.size();
-        vector<int> mst(V,0);
-        vector<int> key(V,INT_MAX);
-        vector<int> parent(V,-1);
-        int ans=0;
-        priority_queue<vector<int>> q;
-        q.push({0,0});
-        key[0]=0;
-    
-        while(q.size()) {
-            int u = q.top()[1];
-            mst[u]=1;
-            q.pop();
-            
-            for(int v=0;v<V;v++) {
-                if(v == u || mst[v] == 1 ) continue;
-                int w = abs(points[u][0]-points[v][0]) + abs(points[u][1]-points[v][1]);
-                if(w < key[v]) {
-                    key[v] = w;
-                    parent[v]=u;
-                    q.push({-key[v],v});
-                }
-            }
-        }
+// Function to return the minimum spanning tree
+vector<pair<pair<int, int>, int>> PrimsOptimized(int n, int m, vector<pair<pair<int, int>, int>> &edges)
+{
+    // Adjacency List Creation
+    unordered_map<int, list<pair<int, int>>> adjList;
 
-        for(auto &a:key) {
-            ans+=a;
-        }
-        return ans;
+    for (int i = 0; i < m; ++i)
+    {
+        int u = edges[i].first.first;
+        int v = edges[i].first.second;
+        int wt = edges[i].second;
+
+        adjList[u].push_back({v, wt});
+        adjList[v].push_back({u, wt});
     }
 
+    // Min Heap: {weight, node}
+    priority_queue<pair<int, int>, vector<pair<int, int>>, greater<pair<int, int>>> minHeap;
 
+    // Vectors for key values, MST inclusion, and parent tracking
+    vector<int> key(n, INT_MAX);
+    vector<bool> inMST(n, false);
+    vector<int> parent(n, -1);
 
+    key[0] = 0;
+    minHeap.push({0, 0}); // {weight, node}
 
+    while (!minHeap.empty())
+    {
+        int u = minHeap.top().second;
+        minHeap.pop();
 
+        if (inMST[u]){
+            continue;
+	}
+        inMST[u] = true;
 
+        for (auto &nbr : adjList[u])
+        {
+            int v = nbr.first;
+            int wt = nbr.second;
 
+            if (!inMST[v] && wt < key[v])
+            {
+                key[v] = wt;
+                parent[v] = u;
+                minHeap.push({wt, v});
+            }
+        }
+    }
 
-
-
-
+    // Constructing the result MST
+    vector<pair<pair<int, int>, int>> resultMST;
+    for (int i = 1; i < n; ++i)
+    {
+        resultMST.push_back({{parent[i], i}, key[i]});
+    }
+    return resultMST;
+}
