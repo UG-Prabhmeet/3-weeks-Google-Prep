@@ -13,30 +13,45 @@
 */
 
 // https://leetcode.com/problems/minimum-weighted-subgraph-with-the-required-paths/
-
+#include <bits/stdc++.h>
+using namespace std;
 #define ll long long
 class Solution {
 public:
-    void dij(ll source,map<ll,vector<vector<ll>>>&m,vector<ll>&dis) {
-        dis[source]=0;
-        priority_queue<vector<ll>> q;
-        q.push({0,source});
-        
-        while(q.size()) {
-            auto a=q.top();
-            q.pop();
-            ll u = a[1];
-            if(dis[u]<abs(a[0]))continue;
-            for(auto &ch:m[u]) {
-                ll v=ch[0];
-                ll w=ch[1];
-                if(dis[v]>w+dis[u]) {
-                    dis[v]=w+dis[u];
-                    q.push({-dis[v],v});
-                }
-            }
-        }
-    }
+	vector<int> dijkstra(vector<vector<pair<int, int>>> &adj, int src)
+	{
+	    int n = adj.size();
+	    vector<int> dist(n, INT_MAX); // to minimise it
+	    dist[src] = 0;
+	
+	    // Min-heap priority queue: (distance, node)
+	    priority_queue<pair<int, int>, vector<pair<int, int>>, greater<pair<int, int>>> pq;
+	    pq.push({0, src});
+	
+	    while (!pq.empty())
+	    {
+	        auto [currDist, node] = pq.top();
+	        pq.pop();
+	
+	        // Skip if we have already found a better path
+	        if (dist[node] < currDist)
+	        {
+	            continue;
+	        }
+	
+	        for (auto &[nbr, weight] : adj[node])
+	        {
+	            if (currDist + weight < dist[nbr])
+	            {
+	                dist[nbr] = currDist + weight;
+	                pq.push({dist[nbr], nbr});
+	            }
+	        }
+	    }
+	
+	    return dist;
+	}
+
     long long minimumWeight(int n, vector<vector<int>>& edges, int src1, int src2, int dest) {
         map<ll,vector<vector<ll>>> m,m1;
         for(auto &a:edges) {
