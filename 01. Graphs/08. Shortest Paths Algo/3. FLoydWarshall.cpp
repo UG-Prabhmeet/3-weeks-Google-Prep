@@ -1,22 +1,54 @@
-/*
-	TC O(V^3)
-	SC O(N)
-	Give us the min distance btw each pair
+/* Floyd-Warshall Algorithm
+   For directed/undirected graphs with +ve or -ve weights (no negative cycles)
+   Solves Multi-Source Shortest Path (MSSP) — // shortest distances between every pair of nodes
+   Time: O(V³), Space: O(V²)
 */
 
-for (int i = 1; i <= n; i++) {
-	for (int j = 1; j <= n; j++) {
-		if (i == j) distance[i][j] = 0;
-		else if (adj[i][j]) distance[i][j] = adj[i][j];
-		else distance[i][j] = INF;
-	}
-}
+void shortestDistance(vector<vector<int>> &mat)
+{
+    int n = mat.size();
+    const int INF = 1e9;
 
+    // Step 1: Preprocess the matrix
+    for (int i = 0; i < n; i++)
+    {
+        for (int j = 0; j < n; j++)
+        {
+            if (mat[i][j] == -1)
+            {
+                mat[i][j] = INF;
+            }
+            if (i == j)
+            {
+                mat[i][j] = 0;
+            }
+        }
+    }
 
-for (int k = 1; k <= n; k++) {
-	for (int i = 1; i <= n; i++) {
-		for (int j = 1; j <= n; j++) {
-			distance[i][j] = min(distance[i][j],distance[i][k]+distance[k][j]);
-		}
-	}
+    // Step 2: Floyd-Warshall algorithm
+    for (int stop = 0; stop < n; stop++)
+    {
+        for (int i = 0; i < n; i++)
+        {
+            for (int j = 0; j < n; j++)
+            {
+                if (mat[i][stop] != INF && mat[stop][j] != INF)
+                {
+                    mat[i][j] = min(mat[i][j], mat[i][stop] + mat[stop][j]);
+                }
+            }
+        }
+    }
+
+    // Step 3: Restore unreachable values to -1
+    for (int i = 0; i < n; i++)
+    {
+        for (int j = 0; j < n; j++)
+        {
+            if (mat[i][j] == INF)
+            {
+                mat[i][j] = -1;
+            }
+        }
+    }
 }
