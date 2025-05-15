@@ -9,77 +9,79 @@
 	7- Space Complexity O(V)
 */ 
 
-int *rank,*parent;
+#include <bits/stdc++.h>
+using namespace std;
 
-int find(int x) {
-	if(x == parent[x]) return x;
-	return parent[x] = find(parent[x]);
-}
-void unite(int x,int y) {
-	x=find(x);
-	y=find(y);
-
-	if(x==y) return ;
-
-	if(rank[x]>rank[y]) {
-		parent[y]=x;
-		rank[x]++;
-	} else {
-		parent[x]=y;
-		rank[y]++;
-	}
+// DSU Initialization
+void makeSet(vector<int> &parent, vector<int> &rank, int n)
+{
+    parent.resize(n);
+    rank.resize(n);   // crude measure of tree's height
+    for (int i = 0; i < n; i++)
+    {
+        parent[i] = i;
+        rank[i] = 0;
+    }
 }
 
-int wtMst(int n, vector<vector<int>>& edges,int skipEdge,int compulsoryEdge) {
-    
-    rank = new int[n];
-    parent = new int[n];
-	for(int i=0;i<n;i++) {
-		rank[i]=0;
-		parent[i]=i;
-	}
-    int totEdges=0;
-	int ans=0;
-	if(compulsoryEdge!=-1){
-		unite(edges[compulsoryEdge][0],edges[compulsoryEdge][1]);
-		ans+=edges[compulsoryEdge][2];
-        totEdges++;
-	}
-
-	for(int i=0;i<edges.size();i++) {
-		if(i==skipEdge)continue;
-		if(find(edges[i][0])!=find(edges[i][1])) {
-			unite(edges[i][0],edges[i][1]);
-			ans+=edges[i][2];
-            totEdges++;
-		}
-	}
-    if(totEdges!=n-1)return INT_MAX;  // cnt make MST
-	return ans;
-
+// Path Compression
+int findParent(vector<int> &parent, int node)
+{
+    if (parent[node] == node){
+        return node;
+    }
+    return parent[node] = findParent(parent, parent[node]);
 }
-vector<vector<int>> findCriticalAndPseudoCriticalEdges(int n, vector<vector<int>>& edges) {
 
-	for(int i=0;i<edges.size();i++) {
-		edges[i].push_back(i);
-	}
-     
-	sort(edges.begin(),edges.end(),[](vector<int>&a,vector<int>&b)->bool{return a[2]<b[2];});
-   
-	int originalMst = wtMst(n,edges,-1,-1);
-   
-	vector<int> critical,psudo_critical;
-    
-	for(int i=0;i<edges.size();i++){
-       
-		if(wtMst(n,edges,i,-1)>originalMst) { 
-			critical.push_back(edges[i][3]);
-		} else if(wtMst(n,edges,-1,i)==originalMst) {
-            
-			psudo_critical.push_back(edges[i][3]);
-		}
-		
-	}
-	return {critical,psudo_critical};
+// Union by Rank
+void unionSET(int u, int v, vector<int> &parent, vector<int> &rank)
+{
+    u = findParent(parent, u);
+    v = findParent(parent, v);
 
+    if (u == v)
+        return;
+
+    if (rank[u] < rank[v])
+    {
+        parent[u] = v;
+    }
+    else if (rank[v] < rank[u])
+    {
+        parent[v] = u;
+    }
+    else
+    {
+        parent[v] = u;
+        rank[u]++;
+    }
+}
+
+// Comparator for sorting edges by weight
+bool cmp(vector<int> &a, vector<int> &b)
+{
+    return a[2] < b[2];
+}
+
+// Kruskal’s Algorithm to return MST edges
+vector<pair<pair<int, int>, int>> KruskalMST(vector<vector<int>> &edges, int n)
+{
+    sort(edges.begin(), edges.end(), cmp); // Sort by weight
+
+    vector<int> parent, rank;
+    makeSet(parent, rank, n);
+
+    vector<pair<pair<int, int>, int>> mstEdges; // To store MST edges
+
+    for (auto &edge : edges)
+    {
+        int u = edge[0], v = edge[1], wt = edge[2];
+        int pu = findParent(parent, u), pv = findParent(parent, v);
+        if (pu != pv)
+        {
+            mstEdges.push_back({{u, v}, wt});
+            unionSET(pu, pv, parent, rank);
+        }
+    }
+    return mstEdges;
 }
