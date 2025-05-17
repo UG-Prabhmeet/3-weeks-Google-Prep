@@ -36,7 +36,7 @@ DAG or Topological Sort
 MST
 1. https://leetcode.com/problems/find-critical-and-pseudo-critical-edges-in-minimum-spanning-tree/
 2. https://leetcode.com/problems/min-cost-to-connect-all-points/ [direct spanning tree code on manipulation of given data]
-3. https://leetcode.com/problems/remove-max-number-of-edges-to-keep-graph-fully-traversable/
+3. https://leetcode.com/problems/remove-max-number-of-edges-to-keep-graph-fully-traversable/ [2 separate dsu and totalEdges - minUsedEdges = maxRemoved edges] 
 
 
 DSU
