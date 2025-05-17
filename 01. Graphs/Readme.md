@@ -19,9 +19,9 @@ DFS
 Cycle Detection
 1. Cycle detection Directed graph
 2. Cycle detection Undirected graph
-3. Bipartite
-4. https://leetcode.com/problems/course-schedule/
-5. https://leetcode.com/problems/course-schedule-ii/
+3. Bipartite  [adjacent nodes must have different colors]
+4. https://leetcode.com/problems/course-schedule/  [topoSort / cycle detection in directed graph]
+5. https://leetcode.com/problems/course-schedule-ii/  [return valid topoSort]
 6. https://leetcode.com/problems/detect-cycles-in-2d-grid/
 7. Shortest Cycle in an undirected Graph
 8. Detecting odd len cycle (Bipartite)
@@ -29,7 +29,7 @@ Cycle Detection
 
 
 DAG or Topological Sort
-1. https://leetcode.com/problems/all-paths-from-source-to-target/
+1. https://leetcode.com/problems/all-paths-from-source-to-target/ [TEMPLATE ⭐] {backtrack at last}
 2. https://leetcode.com/problems/largest-color-value-in-a-directed-graph/
 
 
