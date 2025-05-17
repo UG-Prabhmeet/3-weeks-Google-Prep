@@ -22,10 +22,10 @@ Cycle Detection
 3. Bipartite  [adjacent nodes must have different colors]
 4. https://leetcode.com/problems/course-schedule/  [topoSort / cycle detection in directed graph]
 5. https://leetcode.com/problems/course-schedule-ii/  [return valid topoSort]
-6. https://leetcode.com/problems/detect-cycles-in-2d-grid/
+6. https://leetcode.com/problems/detect-cycles-in-2d-grid/ [literal question, use bool dfs with pi and pj as previous coordinates] 
 7. Shortest Cycle in an undirected Graph
 8. Detecting odd len cycle (Bipartite)
-9. https://leetcode.com/problems/maximum-employees-to-be-invited-to-a-meeting/
+9. https://leetcode.com/problems/maximum-employees-to-be-invited-to-a-meeting/ [TEMPLATE ⭐] [longest cycle detection using dfs]
 
 
 DAG or Topological Sort
@@ -40,7 +40,7 @@ MST
 
 
 DSU
-1. https://leetcode.com/problems/redundant-connection-ii/
+1. https://leetcode.com/problems/redundant-connection-ii/ [build a graph without one of the 2 problematic edges and if its not successfully built then ignored edge is redundant]
 
 
 Trie
