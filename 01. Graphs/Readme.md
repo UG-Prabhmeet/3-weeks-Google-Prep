@@ -1,17 +1,17 @@
 Representation 
-1. https://leetcode.com/problems/minimum-degree-of-a-connected-trio-in-a-graph/
+1. https://leetcode.com/problems/minimum-degree-of-a-connected-trio-in-a-graph/  [brute force]
 
 
 BFS
-1. https://leetcode.com/problems/word-ladder/
-2. https://leetcode.com/problems/word-ladder-ii/
+1. https://leetcode.com/problems/word-ladder/   [checking for each char with a to z]
+2. https://leetcode.com/problems/word-ladder-ii/  [mark no. of steps to reach each string from beginWord with BFS and use DFS to retrace all the paths]
 3. https://leetcode.com/problems/shortest-path-visiting-all-nodes/   (TO DO IN DP)
-4. https://codeforces.com/problemset/problem/1037/D
+4. https://codeforces.com/problemset/problem/1037/D  [sorting AdjList based on position of ele from given BFS VECTOR]
 
 
 DFS
 1. https://www.hackerrank.com/challenges/journey-to-the-moon/problem
-3. https://leetcode.com/problems/maximum-path-quality-of-a-graph/
+3. https://leetcode.com/problems/maximum-path-quality-of-a-graph/  [check for all paths under this Constraint (edgeWeight + currQualityofPath <= maxTime) using DFS]
 3. https://leetcode.com/problems/couples-holding-hands/
 4. https://leetcode.com/problems/reconstruct-itinerary/submissions/
 
