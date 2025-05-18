@@ -30,11 +30,11 @@ Cycle Detection
 
 DAG or Topological Sort
 1. https://leetcode.com/problems/all-paths-from-source-to-target/ [TEMPLATE ⭐] {backtrack at last}
-2. https://leetcode.com/problems/largest-color-value-in-a-directed-graph/
+2. https://leetcode.com/problems/largest-color-value-in-a-directed-graph/ [TO DO IN DP]
 
 
 MST
-1. https://leetcode.com/problems/find-critical-and-pseudo-critical-edges-in-minimum-spanning-tree/
+1. https://leetcode.com/problems/find-critical-and-pseudo-critical-edges-in-minimum-spanning-tree/ [GOTTA CHECK IT]
 2. https://leetcode.com/problems/min-cost-to-connect-all-points/ [direct spanning tree code on manipulation of given data]
 3. https://leetcode.com/problems/remove-max-number-of-edges-to-keep-graph-fully-traversable/ [2 separate dsu and totalEdges - minUsedEdges = maxRemoved edges] 
 
