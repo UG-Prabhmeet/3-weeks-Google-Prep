@@ -10,10 +10,10 @@ BFS
 
 
 DFS
-1. https://www.hackerrank.com/challenges/journey-to-the-moon/problem
+1. https://www.hackerrank.com/challenges/journey-to-the-moon/problem [find no. of ele in each connected component(country) and then totalPairs - Sum of (ele * ele-1)/2]
 3. https://leetcode.com/problems/maximum-path-quality-of-a-graph/  [check for all paths under this Constraint (edgeWeight + currQualityofPath <= maxTime) using DFS]
-3. https://leetcode.com/problems/couples-holding-hands/
-4. https://leetcode.com/problems/reconstruct-itinerary/submissions/
+3. https://leetcode.com/problems/couples-holding-hands/  [better to be solved with Hashmap solution]
+4. https://leetcode.com/problems/reconstruct-itinerary/submissions/ [sort Adj list lexicographically and add current node after visiting and removing all its nbr at last]
 
 
 Cycle Detection
