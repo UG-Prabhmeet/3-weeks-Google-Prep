@@ -1,19 +1,20 @@
 ### EASY
-1. [https://leetcode.com/problems/diameter-of-binary-tree/](https://leetcode.com/problems/diameter-of-binary-tree/)
-2. [https://leetcode.com/problems/invert-binary-tree/](https://leetcode.com/problems/invert-binary-tree/)
-3. [https://leetcode.com/problems/subtree-of-another-tree/](https://leetcode.com/problems/subtree-of-another-tree/)
-4. [https://leetcode.com/problems/range-sum-of-bst/](https://leetcode.com/problems/range-sum-of-bst/)
-5. [https://leetcode.com/problems/symmetric-tree/](https://leetcode.com/problems/symmetric-tree/)
-6. [https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/](https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/)
-7. [https://leetcode.com/problems/merge-two-binary-trees/](https://leetcode.com/problems/merge-two-binary-trees/)
-8. [https://leetcode.com/problems/maximum-depth-of-binary-tree/](https://leetcode.com/problems/maximum-depth-of-binary-tree/)
-9. [https://leetcode.com/problems/binary-tree-paths/](https://leetcode.com/problems/binary-tree-paths/)
-10. [https://leetcode.com/problems/same-tree/](https://leetcode.com/problems/same-tree/)
-11. [https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/)
-12. [https://leetcode.com/problems/path-sum/](https://leetcode.com/problems/path-sum/)
-13. [https://leetcode.com/problems/minimum-absolute-difference-in-bst/](https://leetcode.com/problems/minimum-absolute-difference-in-bst/)
-14. [https://leetcode.com/problems/sum-of-left-leaves/](https://leetcode.com/problems/sum-of-left-leaves/)
-15. [https://leetcode.com/problems/balanced-binary-tree/](https://leetcode.com/problems/balanced-binary-tree/)
+1. [https://leetcode.com/problems/diameter-of-binary-tree/](https://leetcode.com/problems/diameter-of-binary-tree/) pair<diameter, height> fn(root)
+2. [https://leetcode.com/problems/invert-binary-tree/](https://leetcode.com/problems/invert-binary-tree/) invertedLeft = fn(root->left) , root->right = invertedLeft
+3. [https://leetcode.com/problems/subtree-of-another-tree/](https://leetcode.com/problems/subtree-of-another-tree/) return (isIdentical(root, subRoot) || isSubtree(root->left, subRoot) || isSubtree(root->right, subRoot))
+4. [https://leetcode.com/problems/range-sum-of-bst/](https://leetcode.com/problems/range-sum-of-bst/) any traversal + op = root->val btw range -> ans += root->val
+5. [https://leetcode.com/problems/symmetric-tree/](https://leetcode.com/problems/symmetric-tree/) isIdentical(one->left, two->right) && isIdentical(one->right, two->left);
+6. [https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/](https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/) mid index => root , root->left = solve(start, mid - 1, nums) , root->right = solve(mid + 1, end, nums)
+7. [https://leetcode.com/problems/merge-two-binary-trees/](https://leetcode.com/problems/merge-two-binary-trees/) Node* ans = new Node(r1->val + r2->val);
+        ans->l = mergeTrees(r1->l, r2->r);
+8. [https://leetcode.com/problems/maximum-depth-of-binary-tree/](https://leetcode.com/problems/maximum-depth-of-binary-tree/) max(maxDepth(root->left), maxDepth(root->right)) + 1
+9. [https://leetcode.com/problems/binary-tree-paths/](https://leetcode.com/problems/binary-tree-paths/) insert path in ans vector on getting leaf node 
+10. [https://leetcode.com/problems/same-tree/](https://leetcode.com/problems/same-tree/) p->val == q->val && isSame(p->left, q->left) && ..
+11. [https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/) if (root->val > p->val && root->val > q->val) { return lowestCommonAncestor(root->left, p, q); }
+12. [https://leetcode.com/problems/path-sum/](https://leetcode.com/problems/path-sum/) target -= root->val; leafNode check ; return hasPathSum(root->left, target) || .. ;
+13. [https://leetcode.com/problems/minimum-absolute-difference-in-bst/](https://leetcode.com/problems/minimum-absolute-difference-in-bst/) inorderBst vector and ans = min(v[i+1] - v[i]) , second method -> prev = nullptr, inorder + op = if(prev){min(prev->val - root->val)} , prev = root 
+14. [https://leetcode.com/problems/sum-of-left-leaves/](https://leetcode.com/problems/sum-of-left-leaves/) inorder + op = if (root->left && !root->left->left && !root->left->right) { ans += root->left->val; }
+15. [https://leetcode.com/problems/balanced-binary-tree/](https://leetcode.com/problems/balanced-binary-tree/)  pair<isBalanced, heigth> fn(root)
 16. [https://leetcode.com/problems/binary-tree-inorder-traversal/](https://leetcode.com/problems/binary-tree-inorder-traversal/)
 
 ### Medium
