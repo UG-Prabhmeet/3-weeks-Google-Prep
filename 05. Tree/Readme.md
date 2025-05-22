@@ -29,12 +29,12 @@
 9. [Path Sum III](https://leetcode.com/problems/path-sum-iii/)
 10. [Construct Binary Tree from Preorder and Postorder Traversal](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-postorder-traversal/)
 11. [Unique Binary Search Trees](https://leetcode.com/problems/unique-binary-search-trees/)
-12. [Recover Binary Search Tree](https://leetcode.com/problems/recover-binary-search-tree/)
+12. [Recover Binary Search Tree](https://leetcode.com/problems/recover-binary-search-tree/) inorder + op = if(prev->val > root->val){violation}
 13. [Populating Next Right Pointers in Each Node](https://leetcode.com/problems/populating-next-right-pointers-in-each-node/)
 14. [Flatten Binary Tree to Linked List](https://leetcode.com/problems/flatten-binary-tree-to-linked-list/)
-15. [Maximum Width of Binary Tree](https://leetcode.com/problems/maximum-width-of-binary-tree/)
+15. [Maximum Width of Binary Tree](https://leetcode.com/problems/maximum-width-of-binary-tree/) level order + queue<pair<TreeNode *, nodeindex>>q , normalisation
 16. [Unique Binary Search Trees II](https://leetcode.com/problems/unique-binary-search-trees-ii/)
-17. [Kth Smallest Element in a BST](https://leetcode.com/problems/kth-smallest-element-in-a-bst/)
+17. [Kth Smallest Element in a BST](https://leetcode.com/problems/kth-smallest-element-in-a-bst/) inorder + op = count++ if(count == k) ans = root->val
 18. [Redundant Connection](https://leetcode.com/problems/redundant-connection/) better as graph DSU problem 
  
 ### Hard 
