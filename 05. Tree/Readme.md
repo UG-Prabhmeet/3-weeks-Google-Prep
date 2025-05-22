@@ -38,9 +38,9 @@
 18. [Redundant Connection](https://leetcode.com/problems/redundant-connection/) better as graph DSU problem 
  
 ### Hard 
-1. [Serialize and Deserialize Binary Tree](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/)
+1. [Serialize and Deserialize Binary Tree](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/) convert tree into string preorder, return to_string(root->val) + "," + serialize(root->left) + serialize(root->right);
 2. [Binary Tree Maximum Path Sum](https://leetcode.com/problems/binary-tree-maximum-path-sum/)  ans = max({ans, root->val, root->val + leftSum , root->val + rightSum , root->val + leftSum + rightSum});
-3. [Vertical Order Traversal of a Binary Tree](https://leetcode.com/problems/vertical-order-traversal-of-a-binary-tree/)
+3. [Vertical Order Traversal of a Binary Tree](https://leetcode.com/problems/vertical-order-traversal-of-a-binary-tree/) sort vector<tuple<int col, int row, int ele>> nodes
 4. [Binary Tree Cameras](https://leetcode.com/problems/binary-tree-cameras/)
 5. [Sum of Distances in Tree](https://leetcode.com/problems/sum-of-distances-in-tree/)
 6. [Number of Ways to Reconstruct a Tree](https://leetcode.com/problems/number-of-ways-to-reconstruct-a-tree/)
