@@ -31,7 +31,7 @@
 11. [Unique Binary Search Trees](https://leetcode.com/problems/unique-binary-search-trees/)
 12. [Recover Binary Search Tree](https://leetcode.com/problems/recover-binary-search-tree/) inorder + op = if(prev->val > root->val){violation}
 13. [Populating Next Right Pointers in Each Node](https://leetcode.com/problems/populating-next-right-pointers-in-each-node/)
-14. [Flatten Binary Tree to Linked List](https://leetcode.com/problems/flatten-binary-tree-to-linked-list/)
+14. [Flatten Binary Tree to Linked List](https://leetcode.com/problems/flatten-binary-tree-to-linked-list/) iterative method best
 15. [Maximum Width of Binary Tree](https://leetcode.com/problems/maximum-width-of-binary-tree/) level order + queue<pair<TreeNode *, nodeindex>>q , normalisation
 16. [Unique Binary Search Trees II](https://leetcode.com/problems/unique-binary-search-trees-ii/)
 17. [Kth Smallest Element in a BST](https://leetcode.com/problems/kth-smallest-element-in-a-bst/) inorder + op = count++ if(count == k) ans = root->val
@@ -39,7 +39,7 @@
  
 ### Hard 
 1. [Serialize and Deserialize Binary Tree](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/)
-2. [Binary Tree Maximum Path Sum](https://leetcode.com/problems/binary-tree-maximum-path-sum/)
+2. [Binary Tree Maximum Path Sum](https://leetcode.com/problems/binary-tree-maximum-path-sum/)  ans = max({ans, root->val, root->val + leftSum , root->val + rightSum , root->val + leftSum + rightSum});
 3. [Vertical Order Traversal of a Binary Tree](https://leetcode.com/problems/vertical-order-traversal-of-a-binary-tree/)
 4. [Binary Tree Cameras](https://leetcode.com/problems/binary-tree-cameras/)
 5. [Sum of Distances in Tree](https://leetcode.com/problems/sum-of-distances-in-tree/)
