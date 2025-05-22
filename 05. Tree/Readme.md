@@ -44,4 +44,4 @@
 4. [Binary Tree Cameras](https://leetcode.com/problems/binary-tree-cameras/)
 5. [Sum of Distances in Tree](https://leetcode.com/problems/sum-of-distances-in-tree/)
 6. [Number of Ways to Reconstruct a Tree](https://leetcode.com/problems/number-of-ways-to-reconstruct-a-tree/)
-7. [Redundant Connection II](https://leetcode.com/problems/redundant-connection-ii/)
+7. [Redundant Connection II](https://leetcode.com/problems/redundant-connection-ii/) better as graph DSU problem 
