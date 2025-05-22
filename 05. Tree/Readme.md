@@ -19,13 +19,13 @@
 
 ### Medium
 1. [Count Good Nodes in Binary Tree](https://leetcode.com/problems/count-good-nodes-in-binary-tree/)
-2. [Lowest Common Ancestor of a Binary Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/)
-3. [Binary Tree Right Side View](https://leetcode.com/problems/binary-tree-right-side-view/)
+2. [Lowest Common Ancestor of a Binary Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/) if(root.val = p.val) return root, node *l = lca(root->left, p,q) .. if(l && r)return root
+3. [Binary Tree Right Side View](https://leetcode.com/problems/binary-tree-right-side-view/) if (ind == ans.size()) {ans.push_back(root->val);
 4. [All Nodes Distance K in Binary Tree](https://leetcode.com/problems/all-nodes-distance-k-in-binary-tree/)
-5. [Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree/)
-6. [Binary Tree Zigzag Level Order Traversal](https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/)
-7. [Binary Search Tree Iterator](https://leetcode.com/problems/binary-search-tree-iterator/)
-8. [Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/)
+5. [Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree/) all nodes must be in range low , high
+6. [Binary Tree Zigzag Level Order Traversal](https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/) levelOrder traversal + alternating bool leftToRight
+7. [Binary Search Tree Iterator](https://leetcode.com/problems/binary-search-tree-iterator/) Use a stack to push only the lefts, pop stack top to get next, and push right’s lefts.
+8. [Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/) basic
 9. [Path Sum III](https://leetcode.com/problems/path-sum-iii/)
 10. [Construct Binary Tree from Preorder and Postorder Traversal](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-postorder-traversal/)
 11. [Unique Binary Search Trees](https://leetcode.com/problems/unique-binary-search-trees/)
@@ -35,8 +35,8 @@
 15. [Maximum Width of Binary Tree](https://leetcode.com/problems/maximum-width-of-binary-tree/)
 16. [Unique Binary Search Trees II](https://leetcode.com/problems/unique-binary-search-trees-ii/)
 17. [Kth Smallest Element in a BST](https://leetcode.com/problems/kth-smallest-element-in-a-bst/)
-18. [Redundant Connection](https://leetcode.com/problems/redundant-connection/)
-
+18. [Redundant Connection](https://leetcode.com/problems/redundant-connection/) better as graph DSU problem 
+ 
 ### Hard 
 1. [Serialize and Deserialize Binary Tree](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/)
 2. [Binary Tree Maximum Path Sum](https://leetcode.com/problems/binary-tree-maximum-path-sum/)
