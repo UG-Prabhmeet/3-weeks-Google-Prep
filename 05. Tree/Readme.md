@@ -18,7 +18,7 @@
 16. [https://leetcode.com/problems/binary-tree-inorder-traversal/](https://leetcode.com/problems/binary-tree-inorder-traversal/)
 
 ### Medium
-1. [Count Good Nodes in Binary Tree](https://leetcode.com/problems/count-good-nodes-in-binary-tree/)
+1. [Count Good Nodes in Binary Tree](https://leetcode.com/problems/count-good-nodes-in-binary-tree/) preorder + op = if(root->val >= prev) { prev = root->val, count++}
 2. [Lowest Common Ancestor of a Binary Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/) if(root.val = p.val) return root, node *l = lca(root->left, p,q) .. if(l && r)return root
 3. [Binary Tree Right Side View](https://leetcode.com/problems/binary-tree-right-side-view/) if (ind == ans.size()) {ans.push_back(root->val);
 4. [All Nodes Distance K in Binary Tree](https://leetcode.com/problems/all-nodes-distance-k-in-binary-tree/)
@@ -26,7 +26,7 @@
 6. [Binary Tree Zigzag Level Order Traversal](https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/) levelOrder traversal + alternating bool leftToRight
 7. [Binary Search Tree Iterator](https://leetcode.com/problems/binary-search-tree-iterator/) Use a stack to push only the lefts, pop stack top to get next, and push right’s lefts.
 8. [Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/) basic
-9. [Path Sum III](https://leetcode.com/problems/path-sum-iii/)
+9. [Path Sum III](https://leetcode.com/problems/path-sum-iii/) PrefixSum Path Count with Backtrack
 10. [Construct Binary Tree from Preorder and Postorder Traversal](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-postorder-traversal/)
 11. [Unique Binary Search Trees](https://leetcode.com/problems/unique-binary-search-trees/)
 12. [Recover Binary Search Tree](https://leetcode.com/problems/recover-binary-search-tree/) inorder + op = if(prev->val > root->val){violation}
