@@ -27,7 +27,7 @@
 7. [Binary Search Tree Iterator](https://leetcode.com/problems/binary-search-tree-iterator/) Use a stack to push only the lefts, pop stack top to get next, and push right’s lefts.
 8. [Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/) basic
 9. [Path Sum III](https://leetcode.com/problems/path-sum-iii/) PrefixSum Path Count with Backtrack
-10. [Construct Binary Tree from Preorder and Postorder Traversal](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-postorder-traversal/)
+10. [Construct Binary Tree from Preorder and Postorder Traversal](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-postorder-traversal/)  leftSubtreeVal = pre[ind]; endIndex = postOrderMap[leftSubtreeVal]; root->left = solve(pre, post, hash, start, endIndex)
 11. [Unique Binary Search Trees](https://leetcode.com/problems/unique-binary-search-trees/) catalan number or total += dp[root - 1] * dp[nodes - root]
 12. [Recover Binary Search Tree](https://leetcode.com/problems/recover-binary-search-tree/) inorder + op = if(prev->val > root->val){violation}
 13. [Populating Next Right Pointers in Each Node](https://leetcode.com/problems/populating-next-right-pointers-in-each-node/)
