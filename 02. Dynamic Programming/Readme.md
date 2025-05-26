@@ -13,9 +13,9 @@ DP
 
 ### Medium
 1. https://leetcode.com/problems/decode-ways/
-2. https://leetcode.com/problems/word-break/
+2. https://leetcode.com/problems/word-break/ dp[end] = true if any dp[start] before it is true and string[start..end-1] is in wordDict
 3. https://leetcode.com/problems/delete-and-earn/
-4. https://leetcode.com/problems/maximal-square/
+4. https://leetcode.com/problems/maximal-square/ dp[i][j] = min({dp[i - 1][j], dp[i][j - 1], dp[i - 1][j - 1]}) + 1 , dp[i][j] - sq ending @ (i,j)
 5. https://leetcode.com/problems/coin-change/
 6. https://leetcode.com/problems/maximum-product-subarray/
 7. https://leetcode.com/problems/maximum-length-of-repeated-subarray/
