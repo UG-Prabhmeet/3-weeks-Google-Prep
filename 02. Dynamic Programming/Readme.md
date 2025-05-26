@@ -6,10 +6,10 @@ DP
 ## Dynamic Programming
 
 ### Easy
-1. https://leetcode.com/problems/maximum-subarray/
-2. https://leetcode.com/problems/climbing-stairs/
-3. https://leetcode.com/problems/divisor-game/
-4. https://leetcode.com/problems/counting-bits/
+1. https://leetcode.com/problems/maximum-subarray/ [kadane's algo]
+2. https://leetcode.com/problems/climbing-stairs/ [Ways to step = sum of last two steps]
+3. https://leetcode.com/problems/divisor-game/ dp[i] = dp[i] || !dp[i - j];  dp[i] - alice wins/loses if n == i
+4. https://leetcode.com/problems/counting-bits/ setBits[i] = setBits[i / 2] + (i & 1)
 
 ### Medium
 1. https://leetcode.com/problems/decode-ways/
