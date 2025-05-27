@@ -20,17 +20,17 @@ DP
 6. https://leetcode.com/problems/maximum-product-subarray/ left to right, right to left prod check 
 7. https://leetcode.com/problems/maximum-length-of-repeated-subarray/
 8. https://leetcode.com/problems/palindromic-substrings/ vector<vector<bool>> dp(n, vector<bool>(n, false)) dp[i][j] - substring(i, j) is palindrome or not
-9. https://leetcode.com/problems/house-robber/
+9. https://leetcode.com/problems/house-robber/ dp[i] = max(nums[i] + dp[i - 2], dp[i - 1]) dp[i] = max amt at ind = i
 10. https://leetcode.com/problems/continuous-subarray-sum/
 11. https://leetcode.com/problems/knight-dialer/
-12. https://leetcode.com/problems/longest-increasing-subsequence/
-13. https://leetcode.com/problems/unique-paths/
+12. https://leetcode.com/problems/longest-increasing-subsequence/ Replace 1st no. ≥ curr to maintain LIS with smaller ending eles in time O(nLogn)
+13. https://leetcode.com/problems/unique-paths/ Each cell can be reached either from top or left — so sum both to get total paths.
 14. https://leetcode.com/problems/count-square-submatrices-with-all-ones/
 15. https://leetcode.com/problems/range-sum-query-2d-immutable/
 16. https://leetcode.com/problems/longest-arithmetic-subsequence/
 
 ### Hard
-1. https://leetcode.com/problems/trapping-rain-water/
+1. https://leetcode.com/problems/trapping-rain-water/ ans += min(leftMAX[i] , rightMAX[i]) - height[i] ; height[i] represents the water col width where water cant be stored 
 2. https://leetcode.com/problems/word-break-ii/
 3. https://leetcode.com/problems/regular-expression-matching/
 4. https://leetcode.com/problems/maximal-rectangle/
