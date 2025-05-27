@@ -34,7 +34,7 @@ DP
 2. https://leetcode.com/problems/word-break-ii/
 3. https://leetcode.com/problems/regular-expression-matching/
 4. https://leetcode.com/problems/maximal-rectangle/
-5. https://leetcode.com/problems/longest-valid-parentheses/
+5. https://leetcode.com/problems/longest-valid-parentheses/ maxLen = max(maxLen, indof( - st.top())
 6. https://leetcode.com/problems/edit-distance/
 7. https://leetcode.com/problems/minimum-difficulty-of-a-job-schedule/
 8. https://leetcode.com/problems/frog-jump/
