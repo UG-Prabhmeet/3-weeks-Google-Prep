@@ -19,7 +19,7 @@ DP
 5. https://leetcode.com/problems/coin-change/ dp[amt] = min(dp[amt], dp[amt - coin] + 1); dp[i] = min coins to make amt  = i
 6. https://leetcode.com/problems/maximum-product-subarray/ left to right, right to left prod check 
 7. https://leetcode.com/problems/maximum-length-of-repeated-subarray/
-8. https://leetcode.com/problems/palindromic-substrings/
+8. https://leetcode.com/problems/palindromic-substrings/ vector<vector<bool>> dp(n, vector<bool>(n, false)) dp[i][j] - substring(i, j) is palindrome or not
 9. https://leetcode.com/problems/house-robber/
 10. https://leetcode.com/problems/continuous-subarray-sum/
 11. https://leetcode.com/problems/knight-dialer/
