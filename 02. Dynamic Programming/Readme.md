@@ -38,7 +38,7 @@ DP
 6. https://leetcode.com/problems/edit-distance/ if word1[i] != word2[j] -> dp[i][j] = 1 + min({insertOp, deleteOp, replaceOp})
 7. https://leetcode.com/problems/minimum-difficulty-of-a-job-schedule/
 8. https://leetcode.com/problems/frog-jump/
-9. https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iv/
+9. https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iv/ 3D dp 3 states are changing now -> ind , (buy or not buy) , (limit of buying - 0 , 1 ,2, ..... k)
 10. https://leetcode.com/problems/burst-balloons/
 11. https://leetcode.com/problems/minimum-cost-to-merge-stones/
 12. https://leetcode.com/problems/minimum-insertion-steps-to-make-a-string-palindrome/
