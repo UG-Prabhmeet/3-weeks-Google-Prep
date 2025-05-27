@@ -35,7 +35,7 @@ DP
 3. https://leetcode.com/problems/regular-expression-matching/
 4. https://leetcode.com/problems/maximal-rectangle/
 5. https://leetcode.com/problems/longest-valid-parentheses/ maxLen = max(maxLen, indof( - st.top())
-6. https://leetcode.com/problems/edit-distance/
+6. https://leetcode.com/problems/edit-distance/ if word1[i] != word2[j] -> dp[i][j] = 1 + min({insertOp, deleteOp, replaceOp})
 7. https://leetcode.com/problems/minimum-difficulty-of-a-job-schedule/
 8. https://leetcode.com/problems/frog-jump/
 9. https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iv/
