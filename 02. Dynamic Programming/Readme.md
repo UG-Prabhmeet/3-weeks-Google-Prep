@@ -22,7 +22,7 @@ DP
 8. https://leetcode.com/problems/palindromic-substrings/ vector<vector<bool>> dp(n, vector<bool>(n, false)) dp[i][j] - substring(i, j) is palindrome or not
 9. https://leetcode.com/problems/house-robber/ dp[i] = max(nums[i] + dp[i - 2], dp[i - 1]) dp[i] = max amt at ind = i
 10. https://leetcode.com/problems/continuous-subarray-sum/
-11. https://leetcode.com/problems/knight-dialer/
+11. https://leetcode.com/problems/knight-dialer/ At each digit, recursively try all valid knight moves for `n-1` steps and memoize — sum results over all starting digits.
 12. https://leetcode.com/problems/longest-increasing-subsequence/ Replace 1st no. ≥ curr to maintain LIS with smaller ending eles in time O(nLogn)
 13. https://leetcode.com/problems/unique-paths/ Each cell can be reached either from top or left — so sum both to get total paths.
 14. https://leetcode.com/problems/count-square-submatrices-with-all-ones/ same as maximal squares here adding dp[i][j] instead of maxing
@@ -41,7 +41,7 @@ DP
 9. https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iv/ 3D dp 3 states are changing now -> ind , (buy or not buy) , (limit of buying - 0 , 1 ,2, ..... k)
 10. https://leetcode.com/problems/burst-balloons/
 11. https://leetcode.com/problems/minimum-cost-to-merge-stones/
-12. https://leetcode.com/problems/minimum-insertion-steps-to-make-a-string-palindrome/
+12. https://leetcode.com/problems/minimum-insertion-steps-to-make-a-string-palindrome/ s.length() - Longest Common Subseq of str with reversedStr
 13. https://leetcode.com/problems/super-egg-drop/
 14. https://leetcode.com/problems/count-different-palindromic-subsequences/
-15. https://leetcode.com/problems/minimum-cost-to-cut-a-stick/
+15. https://leetcode.com/problems/minimum-cost-to-cut-a-stick/ try all cuts b/w start & end cost = len of(end - start) + solve(start , cutPosi - 1) + solve(cutPosi + 1, end)
