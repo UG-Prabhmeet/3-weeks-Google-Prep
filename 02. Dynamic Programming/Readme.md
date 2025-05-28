@@ -25,7 +25,7 @@ DP
 11. https://leetcode.com/problems/knight-dialer/
 12. https://leetcode.com/problems/longest-increasing-subsequence/ Replace 1st no. ≥ curr to maintain LIS with smaller ending eles in time O(nLogn)
 13. https://leetcode.com/problems/unique-paths/ Each cell can be reached either from top or left — so sum both to get total paths.
-14. https://leetcode.com/problems/count-square-submatrices-with-all-ones/
+14. https://leetcode.com/problems/count-square-submatrices-with-all-ones/ same as maximal squares here adding dp[i][j] instead of maxing
 15. https://leetcode.com/problems/range-sum-query-2d-immutable/
 16. https://leetcode.com/problems/longest-arithmetic-subsequence/
 
