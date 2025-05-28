@@ -39,7 +39,7 @@ DP
 7. https://leetcode.com/problems/minimum-difficulty-of-a-job-schedule/
 8. https://leetcode.com/problems/frog-jump/
 9. https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iv/ 3D dp 3 states are changing now -> ind , (buy or not buy) , (limit of buying - 0 , 1 ,2, ..... k)
-10. https://leetcode.com/problems/burst-balloons/
+10. https://leetcode.com/problems/burst-balloons/ similar to min cost to cut a stick
 11. https://leetcode.com/problems/minimum-cost-to-merge-stones/
 12. https://leetcode.com/problems/minimum-insertion-steps-to-make-a-string-palindrome/ s.length() - Longest Common Subseq of str with reversedStr
 13. https://leetcode.com/problems/super-egg-drop/
