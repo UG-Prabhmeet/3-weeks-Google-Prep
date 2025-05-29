@@ -14,7 +14,7 @@ DP
 ### Medium
 1. https://leetcode.com/problems/decode-ways/
 2. https://leetcode.com/problems/word-break/ dp[end] = true if any dp[start] before it is true and string[start..end-1] is in wordDict
-3. https://leetcode.com/problems/delete-and-earn/
+3. https://leetcode.com/problems/delete-and-earn/ Treat each number as a "house" with value num * freq[num] and then use house robber
 4. https://leetcode.com/problems/maximal-square/ dp[i][j] = min({dp[i - 1][j], dp[i][j - 1], dp[i - 1][j - 1]}) + 1 , dp[i][j] - sq ending @ (i,j)
 5. https://leetcode.com/problems/coin-change/ dp[amt] = min(dp[amt], dp[amt - coin] + 1); dp[i] = min coins to make amt  = i
 6. https://leetcode.com/problems/maximum-product-subarray/ left to right, right to left prod check 
@@ -36,7 +36,7 @@ DP
 4. https://leetcode.com/problems/maximal-rectangle/
 5. https://leetcode.com/problems/longest-valid-parentheses/ maxLen = max(maxLen, indof( - st.top())
 6. https://leetcode.com/problems/edit-distance/ if word1[i] != word2[j] -> dp[i][j] = 1 + min({insertOp, deleteOp, replaceOp})
-7. https://leetcode.com/problems/minimum-difficulty-of-a-job-schedule/
+7. https://leetcode.com/problems/minimum-difficulty-of-a-job-schedule/ vector<vector<int>> dp(n, vector<int>(d + 1, -1)) n - no.of jobs , d - days
 8. https://leetcode.com/problems/frog-jump/
 9. https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iv/ 3D dp 3 states are changing now -> ind , (buy or not buy) , (limit of buying - 0 , 1 ,2, ..... k)
 10. https://leetcode.com/problems/burst-balloons/ similar to min cost to cut a stick
