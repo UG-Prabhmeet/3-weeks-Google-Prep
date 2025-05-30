@@ -18,7 +18,7 @@ DP
 4. https://leetcode.com/problems/maximal-square/ dp[i][j] = min({dp[i - 1][j], dp[i][j - 1], dp[i - 1][j - 1]}) + 1 , dp[i][j] - sq ending @ (i,j)
 5. https://leetcode.com/problems/coin-change/ dp[amt] = min(dp[amt], dp[amt - coin] + 1); dp[i] = min coins to make amt  = i
 6. https://leetcode.com/problems/maximum-product-subarray/ left to right, right to left prod check 
-7. https://leetcode.com/problems/maximum-length-of-repeated-subarray/
+7. https://leetcode.com/problems/maximum-length-of-repeated-subarray/ if chars match , dp[i][j] = solve(i + 1, j + 1) + 1 else 0 and maximize dp[i][j]
 8. https://leetcode.com/problems/palindromic-substrings/ vector<vector<bool>> dp(n, vector<bool>(n, false)) dp[i][j] - substring(i, j) is palindrome or not
 9. https://leetcode.com/problems/house-robber/ dp[i] = max(nums[i] + dp[i - 2], dp[i - 1]) dp[i] = max amt at ind = i
 10. https://leetcode.com/problems/continuous-subarray-sum/
@@ -27,13 +27,13 @@ DP
 13. https://leetcode.com/problems/unique-paths/ Each cell can be reached either from top or left — so sum both to get total paths.
 14. https://leetcode.com/problems/count-square-submatrices-with-all-ones/ same as maximal squares here adding dp[i][j] instead of maxing
 15. https://leetcode.com/problems/range-sum-query-2d-immutable/ dp[i][j] = sum of all eles in the submatrix from top-left (0,0) to (i−1,j−1)
-16. https://leetcode.com/problems/longest-arithmetic-subsequence/
+16. https://leetcode.com/problems/longest-arithmetic-subsequence/ vector<vector<int>> dp(n, vector<int>(1001, 0)) , find len of LAS ending at each ind with diff with its prev pairs
 
 ### Hard
 1. https://leetcode.com/problems/trapping-rain-water/ ans += min(leftMAX[i] , rightMAX[i]) - height[i] ; height[i] represents the water col width where water cant be stored 
 2. https://leetcode.com/problems/word-break-ii/
 3. https://leetcode.com/problems/regular-expression-matching/
-4. https://leetcode.com/problems/maximal-rectangle/
+4. https://leetcode.com/problems/maximal-rectangle/ build col len vector for each row and apply largest rectangle in histogram code for each row
 5. https://leetcode.com/problems/longest-valid-parentheses/ maxLen = max(maxLen, indof( - st.top())
 6. https://leetcode.com/problems/edit-distance/ if word1[i] != word2[j] -> dp[i][j] = 1 + min({insertOp, deleteOp, replaceOp})
 7. https://leetcode.com/problems/minimum-difficulty-of-a-job-schedule/ vector<vector<int>> dp(n, vector<int>(d + 1, -1)) n - no.of jobs , d - days
