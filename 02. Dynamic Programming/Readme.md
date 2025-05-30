@@ -21,7 +21,7 @@ DP
 7. https://leetcode.com/problems/maximum-length-of-repeated-subarray/ if chars match , dp[i][j] = solve(i + 1, j + 1) + 1 else 0 and maximize dp[i][j]
 8. https://leetcode.com/problems/palindromic-substrings/ vector<vector<bool>> dp(n, vector<bool>(n, false)) dp[i][j] - substring(i, j) is palindrome or not
 9. https://leetcode.com/problems/house-robber/ dp[i] = max(nums[i] + dp[i - 2], dp[i - 1]) dp[i] = max amt at ind = i
-10. https://leetcode.com/problems/continuous-subarray-sum/
+10. https://leetcode.com/problems/continuous-subarray-sum/ If 2 prefix sums have same remainder mod k, then subarray between them is divisible by k
 11. https://leetcode.com/problems/knight-dialer/ At each digit, recursively try all valid knight moves for `n-1` steps and memoize — sum results over all starting digits.
 12. https://leetcode.com/problems/longest-increasing-subsequence/ Replace 1st no. ≥ curr to maintain LIS with smaller ending eles in time O(nLogn)
 13. https://leetcode.com/problems/unique-paths/ Each cell can be reached either from top or left — so sum both to get total paths.
