@@ -37,7 +37,7 @@ DP
 5. https://leetcode.com/problems/longest-valid-parentheses/ maxLen = max(maxLen, indof( - st.top())
 6. https://leetcode.com/problems/edit-distance/ if word1[i] != word2[j] -> dp[i][j] = 1 + min({insertOp, deleteOp, replaceOp})
 7. https://leetcode.com/problems/minimum-difficulty-of-a-job-schedule/ vector<vector<int>> dp(n, vector<int>(d + 1, -1)) n - no.of jobs , d - days
-8. https://leetcode.com/problems/frog-jump/
+8. https://leetcode.com/problems/frog-jump/ dp[ind][prevJump] from each ind, try out prevJump , prevJump + 1, prevJump - 1 to reach last stone
 9. https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iv/ 3D dp 3 states are changing now -> ind , (buy or not buy) , (limit of buying - 0 , 1 ,2, ..... k)
 10. https://leetcode.com/problems/burst-balloons/ similar to min cost to cut a stick
 11. https://leetcode.com/problems/minimum-cost-to-merge-stones/
