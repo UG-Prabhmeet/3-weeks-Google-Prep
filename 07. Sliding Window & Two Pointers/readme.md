@@ -1,7 +1,7 @@
 ### Sliding Window 
 
 - https://leetcode.com/problems/longest-substring-with-at-least-k-repeating-characters/
-- https://leetcode.com/problems/max-consecutive-ones-iii/
+- https://leetcode.com/problems/max-consecutive-ones-iii/ dynamic SW, invalid condition check while (((endi - start + 1) - oneCount) > k)
 - https://leetcode.com/problems/grumpy-bookstore-owner/
 - https://leetcode.com/problems/sliding-window-median/
 
