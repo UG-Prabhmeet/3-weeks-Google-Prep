@@ -34,18 +34,18 @@
 16. https://leetcode.com/problems/combination-sum/  
 17. https://leetcode.com/problems/jump-game-ii/  
 18. https://leetcode.com/problems/maximum-points-you-can-obtain-from-cards/  
-19. https://leetcode.com/problems/maximum-area-of-a-piece-of-cake-after-horizontal-and-vertical-cuts/  
+19. https://leetcode.com/problems/maximum-area-of-a-piece-of-cake-after-horizontal-and-vertical-cuts/ return (max consecutive horizontal cut diff * max consecutive vertical cut diff)
 20. https://leetcode.com/problems/max-area-of-island/  
-21. https://leetcode.com/problems/find-all-duplicates-in-an-array/  
-22. https://leetcode.com/problems/k-diff-pairs-in-an-array/  
+21. https://leetcode.com/problems/find-all-duplicates-in-an-array/ if nums[abs(x) - 1] is -ve, then x is duplicate otherwise set it to be -ve
+22. https://leetcode.com/problems/k-diff-pairs-in-an-array/ store ele in map, for ele : hash if(hash.count(ele + k)) ans++ for unique ele
 23. https://leetcode.com/problems/subsets/  
 24. https://leetcode.com/problems/invalid-transactions/  
 25. https://leetcode.com/problems/jump-game/  
-26. https://leetcode.com/problems/subarray-sums-divisible-by-k/  
+26. https://leetcode.com/problems/subarray-sums-divisible-by-k/ If 2 prefix sums have same remainder mod k, then subarray between them is divisible by k
 
 ### Hard
 
-1. https://leetcode.com/problems/first-missing-positive/  
+1. https://leetcode.com/problems/first-missing-positive/ 2 loops, 1st for marking each ele to its ideal posi, 2nd if(nums[i] != (i+1)) then (i+1) is first missing +ve
 2. https://leetcode.com/problems/largest-rectangle-in-histogram/  
 3. https://leetcode.com/problems/insert-delete-getrandom-o1-duplicates-allowed/  
 4. https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii/  
