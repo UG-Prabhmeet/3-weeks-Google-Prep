@@ -13,6 +13,6 @@
 2. https://leetcode.com/problems/daily-temperatures/  
 3. https://leetcode.com/problems/flatten-nested-list-iterator/ push eles in reverse onto stack, expand lists only when needed
 4. https://leetcode.com/problems/online-stock-span/  
-5. https://leetcode.com/problems/minimum-cost-tree-from-leaf-values/  
+5. https://leetcode.com/problems/minimum-cost-tree-from-leaf-values/ pair smaller leaves first using a monotonic stack to minimize total cost
 6. https://leetcode.com/problems/sum-of-subarray-minimums/  
 7. https://leetcode.com/problems/evaluate-reverse-polish-notation/  
