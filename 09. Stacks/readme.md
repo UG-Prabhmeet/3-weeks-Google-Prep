@@ -14,5 +14,5 @@
 3. https://leetcode.com/problems/flatten-nested-list-iterator/ push eles in reverse onto stack, expand lists only when needed
 4. https://leetcode.com/problems/online-stock-span/  
 5. https://leetcode.com/problems/minimum-cost-tree-from-leaf-values/ pair smaller leaves first using a monotonic stack to minimize total cost
-6. https://leetcode.com/problems/sum-of-subarray-minimums/  
+6. https://leetcode.com/problems/sum-of-subarray-minimums/ For each ele, count how many subarrays it is the minimum in, and sum its total contri
 7. https://leetcode.com/problems/evaluate-reverse-polish-notation/  
