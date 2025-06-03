@@ -16,13 +16,13 @@
 9. https://leetcode.com/problems/find-peak-element/  
 10. https://leetcode.com/problems/search-a-2d-matrix/  
 11. https://leetcode.com/problems/divide-two-integers/  
-12. https://leetcode.com/problems/capacity-to-ship-packages-within-d-days/  
-13. https://leetcode.com/problems/minimum-limit-of-balls-in-a-bag/  
+12. https://leetcode.com/problems/capacity-to-ship-packages-within-d-days/ Binary Search on ans
+13. https://leetcode.com/problems/minimum-limit-of-balls-in-a-bag/ binary seach on ans -> find min bag capacity such that all eles can be split within maxOps, ensuring no bag exceeds this capacity
 
 ### Hard
 
 14. https://leetcode.com/problems/median-of-two-sorted-arrays/  
 15. https://leetcode.com/problems/count-of-smaller-numbers-after-self/  
 16. https://leetcode.com/problems/max-sum-of-rectangle-no-larger-than-k/  
-17. https://leetcode.com/problems/split-array-largest-sum/  
+17. https://leetcode.com/problems/split-array-largest-sum/ binary search on ans to find min sum for each subarray when dividing nums into at most k parts
 18. https://leetcode.com/problems/shortest-subarray-with-sum-at-least-k/  
