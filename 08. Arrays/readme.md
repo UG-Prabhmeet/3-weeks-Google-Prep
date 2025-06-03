@@ -47,6 +47,6 @@
 
 1. https://leetcode.com/problems/first-missing-positive/ 2 loops, 1st for marking each ele to its ideal posi, 2nd if(nums[i] != (i+1)) then (i+1) is first missing +ve
 2. https://leetcode.com/problems/largest-rectangle-in-histogram/  
-3. https://leetcode.com/problems/insert-delete-getrandom-o1-duplicates-allowed/  
+3. https://leetcode.com/problems/insert-delete-getrandom-o1-duplicates-allowed/ unordered_map<int, unordered_set<int>> hash, value to set of indices/positions
 4. https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii/  
-5. https://leetcode.com/problems/max-value-of-equation/  
+5. https://leetcode.com/problems/max-value-of-equation/ Maximize (yj + xj) + (yi - xi) for all valid xj - xi <= k. 
