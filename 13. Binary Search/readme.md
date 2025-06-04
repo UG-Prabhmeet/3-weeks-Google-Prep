@@ -15,7 +15,7 @@
 8. https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/  
 9. https://leetcode.com/problems/find-peak-element/  
 10. https://leetcode.com/problems/search-a-2d-matrix/  
-11. https://leetcode.com/problems/divide-two-integers/  
+11. https://leetcode.com/problems/divide-two-integers/ Subtract highest possible multiples of divisor (w binary doubling) to simulate division
 12. https://leetcode.com/problems/capacity-to-ship-packages-within-d-days/ Binary Search on ans
 13. https://leetcode.com/problems/minimum-limit-of-balls-in-a-bag/ binary seach on ans -> find min bag capacity such that all eles can be split within maxOps, ensuring no bag exceeds this capacity
 
