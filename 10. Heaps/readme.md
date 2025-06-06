@@ -18,7 +18,7 @@
 3. https://leetcode.com/problems/the-skyline-problem/  
 4. https://leetcode.com/problems/trapping-rain-water-ii/  
 5. https://leetcode.com/problems/minimum-number-of-refueling-stops/  
-6. https://leetcode.com/problems/swim-in-rising-water/  
+6. https://leetcode.com/problems/swim-in-rising-water/ Dijkstra + minHeap to travel only from smallest elevations and Store maxElevation during path
 7. https://leetcode.com/problems/shortest-path-to-get-all-keys/  
 8. https://leetcode.com/problems/minimum-cost-to-hire-k-workers/ maxHeap of quality of siz = k, when siz > k, heap.pop , ans = min(totalQuality * ratio[i])
 9. https://leetcode.com/problems/k-th-smallest-prime-fraction/  
