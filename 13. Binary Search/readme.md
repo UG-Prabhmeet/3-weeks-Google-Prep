@@ -22,7 +22,7 @@
 ### Hard
 
 14. https://leetcode.com/problems/median-of-two-sorted-arrays/  
-15. https://leetcode.com/problems/count-of-smaller-numbers-after-self/  
-16. https://leetcode.com/problems/max-sum-of-rectangle-no-larger-than-k/  
+15. https://leetcode.com/problems/count-of-smaller-numbers-after-self/ inversion count of GFG, uses merge sort
+16. https://leetcode.com/problems/max-sum-of-rectangle-no-larger-than-k/ max sum in Range Sum Query 2D - Immutable (DP question)
 17. https://leetcode.com/problems/split-array-largest-sum/ binary search on ans to find min sum for each subarray when dividing nums into at most k parts
 18. https://leetcode.com/problems/shortest-subarray-with-sum-at-least-k/ Dynamic SW, deque<pair< long long , int >>dq {prefixsum , endingIndex}
