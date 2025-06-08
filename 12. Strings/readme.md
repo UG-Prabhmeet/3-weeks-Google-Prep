@@ -15,18 +15,18 @@
 8. https://leetcode.com/problems/longest-palindromic-substring/  
 9. https://leetcode.com/problems/group-anagrams/  
 10. https://leetcode.com/problems/generate-parentheses/  
-11. https://leetcode.com/problems/basic-calculator-ii/  
+11. https://leetcode.com/problems/basic-calculator-ii/ push intermediate results (nums, (a*b), (a/b)) into stack and finally add them
 12. https://leetcode.com/problems/integer-to-roman/  
 13. https://leetcode.com/problems/reverse-words-in-a-string/  
 14. https://leetcode.com/problems/simplify-path/ Split path into components between /s, "." and "..", and use a stack
-15. https://leetcode.com/problems/zigzag-conversion/  
+15. https://leetcode.com/problems/zigzag-conversion/ vector<string> hash(numRows)
 
 ### Hard
 
 16. https://leetcode.com/problems/text-justification/  
-17. https://leetcode.com/problems/integer-to-english-words/  
+17. https://leetcode.com/problems/integer-to-english-words/ Split num into 3-digit chunks, convert each to words, then concatenate 
 18. https://leetcode.com/problems/minimum-window-substring/ dynamic SW, uMaps t_freq, s_freq, count - no. of chars of t needed in s
 19. https://leetcode.com/problems/valid-number/  
 20. https://leetcode.com/problems/distinct-subsequences/ DP, if s[i] == t[j] -> way = solve(i + 1, j + 1) + solve(i + 1, j) else way = solve(i + 1, j)
-21. https://leetcode.com/problems/smallest-range-covering-elements-from-k-lists/  
+21. https://leetcode.com/problems/smallest-range-covering-elements-from-k-lists/ minHeap of tuple<ele_val, list_idx, ele_idx> && same like merge k sorted LL
 22. https://leetcode.com/problems/substring-with-concatenation-of-all-words/  
