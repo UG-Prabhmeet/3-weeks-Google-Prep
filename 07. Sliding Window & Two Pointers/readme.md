@@ -3,7 +3,7 @@
 - https://leetcode.com/problems/longest-substring-with-at-least-k-repeating-characters/ for targetUnique ∈ [1,26], use SW to find the longest substring where exactly curr no. of unique chars = target no. of Unique chars with freq >= k
 - https://leetcode.com/problems/max-consecutive-ones-iii/ dynamic SW, invalid condition check while (((endi - start + 1) - oneCount) > k)
 - https://leetcode.com/problems/grumpy-bookstore-owner/ fixed size SW, return ans = AlwaysSatisified + max of grumpy == 1 cust
-- https://leetcode.com/problems/sliding-window-median/
+- https://leetcode.com/problems/sliding-window-median/ Maintain max-heap for left, min-heap for right to track window and find the median while lazily removing outdated elements.
 
 ### Two Pointer 
 
