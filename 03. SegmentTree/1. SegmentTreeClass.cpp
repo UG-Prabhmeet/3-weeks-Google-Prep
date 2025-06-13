@@ -6,7 +6,6 @@ class SegmentTree
 private:
 	vector<int> tree; // segment tree
 	int n;            // arr size
-
 	void buildTree(vector<int> &arr, int treeInd, int left, int right)
 	{
 		if (left == right)
